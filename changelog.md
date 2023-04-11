@@ -1,15 +1,23 @@
 # Changelog
 
-## 2.0.0
+## 2.0.0 - beta
 
+- This is a rewrite of the entire configuration to leverage the new speed setting provided by AnkerMake. Additional changes have been made that are not listed. For a full diff of the main configuration, please look here: 
 - Moved to Ankermgmt organization (NOT AFFILIATED WITH ANKER)
 - Moved Cura and PrusaSlicer configurations into separate repositories
   - **NOTE:** Moving forward, this repository will contain PrusaSlicer Configurations only
 - Moved the majority of configurations to an AnkerMake CE base profile.
-- Moved the remaining configurations to an AnkerMake CE M5 profile.
+- Moved the remaining configurations to an AnkerMake CE M5 profile. 
 - Added CE (Community Edition) to allow the profile to be installed separately from the built-in AnkerMake profile.
-- Moved from .4 layer hiets to .5 layer height bases.
-- Complete rework ofr
+- Modified layer heights to be .5 in difference (0.5, 1.0, 1.5, 2.0, 2.5, 3.0) 
+- added three new SPEED profiles (1.5, 2.0, 2.5)
+- Complete rework of speeds for all profiles
+- update gcode flavor to marlin 2 to improve time estimates. (special thanks to discord member @dmbaio) 
+- modified extrusion widths to be similar to other profiles
+- added max_volumetric_speed to base profile and also max_volumetric_speeds to filament types
+- enabled new overhang speeds
+- changed top layer infill to new "monotonic lines" option
+- added ironing settings provided by @TheMasterOfTech
 
 ## 1.10
 
