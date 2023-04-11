@@ -1,5 +1,16 @@
 # Changelog
 
+## 2.0.0
+
+- Moved to Ankermgmt organization (NOT AFFILIATED WITH ANKER)
+- Moved Cura and PrusaSlicer configurations into separate repositories
+  - **NOTE:** Moving forward, this repository will contain PrusaSlicer Configurations only
+- Moved the majority of configurations to an AnkerMake CE base profile.
+- Moved the remaining configurations to an AnkerMake CE M5 profile.
+- Added CE (Community Edition) to allow the profile to be installed separately from the built-in AnkerMake profile.
+- Moved from .4 layer hiets to .5 layer height bases.
+- Complete rework ofr
+
 ## 1.10
 
 - Cura Profile Changes
