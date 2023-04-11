@@ -2,8 +2,6 @@
 
 [![GitHub release](https://img.shields.io/github/v/release/Ankermgmt/prusaslicer-ankermake-ce-profiles?display_name=tag&sort=semver&style=for-the-badge)](https://github.com/Ankermgmt/prusaslicer-ankermake-ce-profiles/releases/latest)
 
-https://github.com/Ankermgmt/prusaslicer-ankermake-ce-profiles/releases/download/v2.0.0-beta-1/PrusaSlicer-2.6-AMCE-Profile.zip
-
 ![image](https://user-images.githubusercontent.com/10281380/231049563-ffde8326-08e2-4b79-9bfe-a261e1a01ed7.png)
 
 ## Overview
@@ -23,16 +21,16 @@ The configuration authors strongly believe there is no "one size fits all" profi
 1. Open PrusaSlicer
 1. Under the Help Menu, choose "Show Configuration Folder" (keep this folder open for the next several steps).
 1. Close out of PrusaSlicer
-1. Download [PrusaSlicer-2.6-AMCE-Profile.zip](https://github.com/Ankermgmt/prusaslicer-ankermake-ce-profiles/releases/latest/download/PrusaSlicer-2.6-AMCE-Profile.zip)
-1. Extract the zip file to a location of your choice and open the folder.
-1. Copy the *"vendor"* folder to the Configuration folder you opened in step two.![image](https://user-images.githubusercontent.com/10281380/209450820-d98c5f82-07d5-453b-b5e1-11b294b257ac.png)
-1. Open PrusaSlicer, and you should now be able to add a new AnkerMake M5 CE Printer. (printer Settings tab → Printer drop-down → Add/remove printers
-1. In the Configuration Wizard, choose Other Vendors:
-1. Select the AnkerMake CE Checkbox
-1. Select AnkerMake CE FFF under the left menu
-1. Ensure the check mark next to the 0.4 mm nozzle is enabled.
-1. In the left Navigation, select Filaments and then select all available filaments.  
-1. Once you have added any other printers or made changes, click Finish on the Configuration wizard.
+1. Download [PrusaSlicer-2.6-AMCE-Profile.zip](https://github.com/Ankermgmt/prusaslicer-ankermake-ce-profiles/releases/download/v2.0.0-beta-1/PrusaSlicer-2.6-AMCE-Profile.zip)
+3. Extract the zip file to a location of your choice and open the folder.
+4. Copy the *"vendor"* folder to the Configuration folder you opened in step two.![image](https://user-images.githubusercontent.com/10281380/209450820-d98c5f82-07d5-453b-b5e1-11b294b257ac.png)
+5. Open PrusaSlicer, and you should now be able to add a new AnkerMake M5 CE Printer. (printer Settings tab → Printer drop-down → Add/remove printers
+6. In the Configuration Wizard, choose Other Vendors:
+7. Select the AnkerMake CE Checkbox
+8. Select AnkerMake CE FFF under the left menu
+9. Ensure the check mark next to the 0.4 mm nozzle is enabled.
+10. In the left Navigation, select Filaments and then select all available filaments.  
+11. Once you have added any other printers or made changes, click Finish on the Configuration wizard.
 
 You now should have the AnkerMake M5 Community Edition Printer Profiles.
 
