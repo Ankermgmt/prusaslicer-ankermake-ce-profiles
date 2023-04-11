@@ -1,6 +1,6 @@
 # Changelog
 
-## 2.0.0 - beta
+## v2.0.0-beta-1
 
 - This is a rewrite of the entire configuration to leverage the new speed setting provided by AnkerMake. Additional changes have been made that are not listed. For a full diff of the main configuration, please look here: 
 - Moved to Ankermgmt organization (NOT AFFILIATED WITH ANKER)
