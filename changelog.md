@@ -1,5 +1,15 @@
 # Changelog
 
+## v2.0.1
+- This version enables a fast mode consistently. See the [readme.md](https://github.com/Ankermgmt/prusaslicer-ankermake-ce-profiles/blob/master/readme.md) for more details.
+- New community edition M5 icon for the configuration wizard
+- Optimized bottom and top surface patterns for regular profiles. (monotonic lines)
+- Tuned some speed settings and moved to percentages where possible. 
+- Increased default fill density by 5% and reduced default perimeter to 2.
+- Increased infill overlap to close up some holes on surfaces
+- Minor adjuments to volumetric configurations to improve print quality and speeds
+- Implemented minimum print layer time on regular speed prints to increase quality. 
+
 ## v2.0.0-beta-1
 
 - This is a rewrite of the entire configuration to leverage the new speed setting provided by AnkerMake. Additional changes have been made that are not listed. For a full diff of the main configuration, please look here: https://www.diffnow.com/compare-urls?url1=https://raw.githubusercontent.com/just-trey/ankermake-m5-profile/d195005c51015fb9b1d4d9afdea68b1a546ae1c4/PrusaSlicer-2.5-M5-Profile/vendor/AnkerMake.ini&url2=https://raw.githubusercontent.com/Ankermgmt/prusaslicer-ankermake-ce-profiles/6cdfd5c1445e05448e6bf88d7a6f7dc217adc2a2/vendor/AnkerMakeCE.ini&demo=1
