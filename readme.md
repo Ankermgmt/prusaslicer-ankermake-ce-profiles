@@ -21,11 +21,12 @@ The configuration authors strongly believe there is no "one size fits all" profi
 1. Open PrusaSlicer
 1. Under the Help Menu, choose "Show Configuration Folder" (keep this folder open for the next several steps).
 1. Close out of PrusaSlicer
-1. Download [PrusaSlicer-2.6-AMCE-Profile.zip](https://github.com/Ankermgmt/prusaslicer-ankermake-ce-profiles/releases/latest/download/PrusaSlicer-2.6-AMCE-Profile.zip)
+1. Download [PrusaSlicer-AMCE-Profile.zip](https://github.com/Ankermgmt/prusaslicer-ankermake-ce-profiles/releases/latest/download/PrusaSlicer-AMCE-Profile.zip)
 1. Extract the zip file to a location of your choice and open the folder.
 1. Copy the *"vendor"* folder to the Configuration folder you opened in step two.![image](https://user-images.githubusercontent.com/10281380/209450820-d98c5f82-07d5-453b-b5e1-11b294b257ac.png)
 
 ## Installing the printer
+
 1. Open PrusaSlicer, and you should now be able to add a new AnkerMake M5 CE Printer. (printer Settings tab → Printer drop-down → Add/remove printers
 1. In the Configuration Wizard, choose Other Vendors:
 1. Select the AnkerMake CE Checkbox
@@ -34,29 +35,30 @@ The configuration authors strongly believe there is no "one size fits all" profi
 1. In the left Navigation, select Filaments and then select all available filaments.  
 1. Once you have added any other printers or made changes, click Finish on the Configuration wizard.
 
-## Choosing the "default" or "fast" print profiles.
-Once you have completed the setup, you will see 2 AnkerMakeCE M5 Printer Settings available: 
+## Choosing the "default" or "fast" print profiles
+
+Once you have completed the setup, you will see 2 AnkerMakeCE M5 Printer Settings available:
 ![image](https://user-images.githubusercontent.com/10281380/235390221-c0bb8cb5-4c94-4745-88df-f9b38cd2feab.png)
 
 - AnkerMake-CE M5 (0.4mm nozzle)
-  - use this printer option for higher quality but slower prints. 
+  - use this printer option for higher quality but slower prints.
 - AnkerMake-CE M5-FAST MODE (0.4mm nozzle)
-  - use this printer option for higher speed but lower quality prints. 
+  - use this printer option for higher speed but lower quality prints.
 
 The available filaments and Print Settiing are EXCLUSIVE to the Printer Setting chosen.
 
 - AnkerMake-CE M5 (0.4mm nozzle)
-  - Available print settings: 
+  - Available print settings:
   - ![image](https://user-images.githubusercontent.com/10281380/235390055-8a0b8340-931c-47ca-86ad-db795038b1cc.png)
-  - Available generic filaments: 
+  - Available generic filaments:
   - ![image](https://user-images.githubusercontent.com/10281380/235390004-415b0541-7911-4391-95ea-00ff5f301fa3.png)
 - AnkerMake-CE M5-FAST MODE (0.4mm nozzle)
-  - Available print settings: 
+  - Available print settings:
   - ![image](https://user-images.githubusercontent.com/10281380/235389951-ed4dd55f-1e7d-4c88-8d61-7257c0ac1893.png)
-  - Available generic filaments: 
+  - Available generic filaments:
   - ![image](https://user-images.githubusercontent.com/10281380/235389882-580f35dd-539c-4cd6-bb3c-672cbe9138cb.png)
 
-In the upcoming releases, we will provide higher-quality print options for "FAST MODE." Our goal is to deprecate the non "FAST MODE" printer setting. 
+In the upcoming releases, we will provide higher-quality print options for "FAST MODE." Our goal is to deprecate the non "FAST MODE" printer setting.
 
 ## How to print via wifi after slicing
 
@@ -73,7 +75,7 @@ Printing files via wifi is supported but not directly from PrusaSlicer. You may 
 
 ## Licences
 
-  - - Prusa prfiles are under released under the [GNU AFFERO GENERAL PUBLIC LICENSE](LICENSE).
+- - Prusa prfiles are under released under the [GNU AFFERO GENERAL PUBLIC LICENSE](LICENSE).
 
 ## Changelog
 

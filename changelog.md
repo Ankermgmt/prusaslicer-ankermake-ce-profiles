@@ -2,7 +2,8 @@
 
 ## v2.1.1
 
-- No changes to settings, fixing a version mismatch to aovid confusion.
+- No changes to settings, fixing a version mismatch to avoid confusion.
+- removed version number from published zip file.
 
 ## v2.1.0
 
