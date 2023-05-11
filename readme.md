@@ -18,12 +18,24 @@ The configuration authors strongly believe there is no "one size fits all" profi
 
 ## Installing the profile
 
-1. Open PrusaSlicer
-1. Under the Help Menu, choose "Show Configuration Folder" (keep this folder open for the next several steps).
-1. Close out of PrusaSlicer
-1. Download [PrusaSlicer-AMCE-Profile.zip](https://github.com/Ankermgmt/prusaslicer-ankermake-ce-profiles/releases/latest/download/PrusaSlicer-AMCE-Profile.zip)
-1. Extract the zip file to a location of your choice and open the folder.
-1. Copy the *"vendor"* folder to the Configuration folder you opened in step two.![image](https://user-images.githubusercontent.com/10281380/209450820-d98c5f82-07d5-453b-b5e1-11b294b257ac.png)
+### Scripted Install
+
+Bash and powershell scripts are provided to make installing/updating these profiles easier.
+
+Simply run `./install.sh` or `./install.ps1` to install/update the profiles.
+
+1. Open terminal/powershell window
+2. `cd ~/Downloads/PrusaSlicer-AMCE-Profile`
+3. run `./install.sh` (mac/linux) or `.\install.ps1` (windows)
+
+### Manual Install
+
+2. Open PrusaSlicer
+3. Under the Help Menu, choose "Show Configuration Folder" (keep this folder open for the next several steps).
+4. Close out of PrusaSlicer
+5. Download [PrusaSlicer-AMCE-Profile.zip](https://github.com/Ankermgmt/prusaslicer-ankermake-ce-profiles/releases/latest/download/PrusaSlicer-AMCE-Profile.zip)
+6. Extract the zip file to a location of your choice and open the folder.
+7. Copy the *"vendor"* folder to the Configuration folder you opened in step two.![image](https://user-images.githubusercontent.com/10281380/209450820-d98c5f82-07d5-453b-b5e1-11b294b257ac.png)
 
 ## Installing the printer
 
