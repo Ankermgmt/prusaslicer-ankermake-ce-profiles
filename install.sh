@@ -85,6 +85,8 @@ if [ -d "$dest_dir/${files[0]}" ] || [ -f "$dest_dir/${files[1]}" ] || [ -f "$de
             echo "Invalid choice. Skipping file copying."
             ;;
     esac
+else
+    overwrite=true
 fi
 if [ "$overwrite" = true ]; then
     # Create the destination directory if it doesn't exist
