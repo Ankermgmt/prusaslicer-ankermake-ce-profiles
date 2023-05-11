@@ -41,4 +41,4 @@ jobs:
           draft: false
           generateReleaseNotes: false
           prerelease: false
-          bodyFile: #TODO: implement a bodyfile
+          bodyFile: release.md
