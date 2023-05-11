@@ -10,7 +10,7 @@ if (!(Test-Path -Path $prusaSlicerDir -PathType Container)) {
 # Set the destination directory
 $prusaVendorDir = Join-Path -Path $prusaSlicerDir -ChildPath 'vendor'
 
-# Open in windows explorer $prusaSlicerDir/vendor
+# Open in windows explorer $prusaSlicerDir
 Invoke-Item -Path "$prusaVendorDir"
 
 # Check if destination directory or files exist
@@ -34,5 +34,3 @@ foreach ($file in $files) {
     Write-Host "Copying $srcFile to $destFile"
     Copy-Item -Path $srcFile -Destination $destFile -Force
 }
-
-
