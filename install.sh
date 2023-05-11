@@ -92,6 +92,14 @@ if [ "$overwrite" = true ]; then
         mkdir -p "$dest_dir"
     fi
     
+    # Open the destination directory in the platform default file manager
+    if [[ "$OSTYPE" == "darwin"* ]]; then
+        open "$dest_dir" || true
+    fi
+    if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+        xdg-open "$dest_dir" || true
+    fi
+
     # Copy the directory and files recursively
     cp -R "vendor/${files[0]}" "$dest_dir"
     cp "vendor/${files[1]}" "$dest_dir"
