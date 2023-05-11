@@ -11,12 +11,25 @@ This repository holds the latest version and updates to AnkerMake community prof
 ## Known Issues
 
 - The speed multiplier (ex x1.8) is not correct.
+- Changing speeds via the touch screen or app after printing starts is not working
 
 ## Note
 
 The configuration authors strongly believe there is no "one size fits all" profile. These profiles provide an excellent base to get started, but we highly encourage users to learn and adjust their slicer settings to suit their use case.
 
 ## Installing the profile
+
+### Scripted Install
+
+Bash and powershell scripts are provided to make installing/updating these profiles easier.
+
+Simply run `./install.sh` or `./install.ps1` to install/update the profiles.
+
+1. Open terminal/powershell window
+2. `cd ~/Downloads/PrusaSlicer-AMCE-Profile`
+3. run `./install.sh` (mac/linux) or `.\install.ps1` (windows)
+
+### Manual Install
 
 1. Open PrusaSlicer
 1. Under the Help Menu, choose "Show Configuration Folder" (keep this folder open for the next several steps).
@@ -75,7 +88,7 @@ Printing files via wifi is supported but not directly from PrusaSlicer. You may 
 
 ## Licences
 
-- - Prusa prfiles are under released under the [GNU AFFERO GENERAL PUBLIC LICENSE](LICENSE).
+  - - Prusa prfiles are under released under the [GNU AFFERO GENERAL PUBLIC LICENSE](LICENSE).
 
 ## Changelog
 

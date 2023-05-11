@@ -1,5 +1,12 @@
 # Changelog
 
+## v2.2.0
+
+- Added scripted install (thank you @spuder)
+- Renamed old printer setup to "CLASSIC" and removed FAST from printer options
+Removed many unneeded settings that made no real difference
+-
+
 ## v2.1.1
 
 - No changes to settings, fixing a version mismatch to avoid confusion.
