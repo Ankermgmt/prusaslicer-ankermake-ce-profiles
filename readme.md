@@ -4,6 +4,19 @@
 
 ![image](https://user-images.githubusercontent.com/10281380/231049563-ffde8326-08e2-4b79-9bfe-a261e1a01ed7.png)
 
+## 2.2.0 Update notice
+We have made significant changes to how the profiles are defined. You will now see a "CLASSIC" and a new regular printer. When Ankermake introduced the FAST MODE update, they introduced some new features unavailable for the original mode (our "CLASSIC" mode). "FAST SPEED" enabled:
+
+- S-Curve Acceleration
+- Newer linear advanced values
+- And, of course, higher speed and acceleration limits.
+
+After a few conversations with @dmhbai (thank you, friend), we thought those features should be able for all speeds and not just "FAST SPEED." We have decided to use the "FAST SPEED" enhancements for the default printer and named the original option provided by AnkerMake as a "CLASSIC" printer. The new regular mode will make some new noises that may surprise you. If you don't want these features or have concerns, choose the "CLASSIC" printer. Note that high-speed printing options are only available on regular (non-classic) printer.
+
+### A note about z-lift
+
+We have z-lift disabled by default on both printers as it impacts print times. If you find your nozzle scraping or plan on enabling ironing, enableing z-lift is highly recommended.
+
 ## Overview
 
 This repository holds the latest version and updates to AnkerMake community profiles [initially developed and maintained by @just-trey](https://github.com/just-trey/ankermake-m5-profile). We have decided to continue to support these profiles to allow users an alternative to the official profiles provided by AnkerMake. You can install these profiles alongside the built-in AnkerMake profiles. Why not install both and see which one you prefer?
@@ -21,13 +34,13 @@ The configuration authors strongly believe there is no "one size fits all" profi
 
 ### Scripted Install
 
-Bash and powershell scripts are provided to make installing/updating these profiles easier.
+We now provide Bash and Powershell scripts to make installing/updating these profiles easier.
 
-Simply run `./install.sh` or `./install.ps1` to install/update the profiles.
+Run `./install.sh` or `./install.ps1` to install/update the profiles.
 
-1. Open terminal/powershell window
+1. Open the terminal/PowerShell window
 2. `cd ~/Downloads/PrusaSlicer-AMCE-Profile`
-3. run `./install.sh` (mac/linux) or `.\install.ps1` (windows)
+3. run `./install.sh` (mac/Linux) or `.\install.ps1` (windows)
 
 ### Manual Install
 
@@ -40,38 +53,13 @@ Simply run `./install.sh` or `./install.ps1` to install/update the profiles.
 
 ## Installing the printer
 
-1. Open PrusaSlicer, and you should now be able to add a new AnkerMake M5 CE Printer. (printer Settings tab → Printer drop-down → Add/remove printers
+1. Open PrusaSlicer and you should now be able to add a new AnkerMake M5 CE Printer. (printer Settings tab → Printer drop-down → Add/remove printers
 1. In the Configuration Wizard, choose Other Vendors:
 1. Select the AnkerMake CE Checkbox
 1. Select AnkerMake CE FFF under the left menu
 1. Ensure the check mark next to the 0.4 mm nozzle is enabled.
 1. In the left Navigation, select Filaments and then select all available filaments.  
 1. Once you have added any other printers or made changes, click Finish on the Configuration wizard.
-
-## Choosing the "default" or "fast" print profiles
-
-Once you have completed the setup, you will see 2 AnkerMakeCE M5 Printer Settings available:
-![image](https://user-images.githubusercontent.com/10281380/235390221-c0bb8cb5-4c94-4745-88df-f9b38cd2feab.png)
-
-- AnkerMake-CE M5 (0.4mm nozzle)
-  - use this printer option for higher quality but slower prints.
-- AnkerMake-CE M5-FAST MODE (0.4mm nozzle)
-  - use this printer option for higher speed but lower quality prints.
-
-The available filaments and Print Settiing are EXCLUSIVE to the Printer Setting chosen.
-
-- AnkerMake-CE M5 (0.4mm nozzle)
-  - Available print settings:
-  - ![image](https://user-images.githubusercontent.com/10281380/235390055-8a0b8340-931c-47ca-86ad-db795038b1cc.png)
-  - Available generic filaments:
-  - ![image](https://user-images.githubusercontent.com/10281380/235390004-415b0541-7911-4391-95ea-00ff5f301fa3.png)
-- AnkerMake-CE M5-FAST MODE (0.4mm nozzle)
-  - Available print settings:
-  - ![image](https://user-images.githubusercontent.com/10281380/235389951-ed4dd55f-1e7d-4c88-8d61-7257c0ac1893.png)
-  - Available generic filaments:
-  - ![image](https://user-images.githubusercontent.com/10281380/235389882-580f35dd-539c-4cd6-bb3c-672cbe9138cb.png)
-
-In the upcoming releases, we will provide higher-quality print options for "FAST MODE." Our goal is to deprecate the non "FAST MODE" printer setting.
 
 ## How to print via wifi after slicing
 
@@ -86,9 +74,12 @@ Printing files via wifi is supported but not directly from PrusaSlicer. You may 
 1. Click on the My Computer icon and select your sliced file. ![image](https://user-images.githubusercontent.com/10281380/206552887-486043c2-3329-4105-ad99-438bf1f64516.png)
 1. Click print underneath the device details. ![image](https://user-images.githubusercontent.com/10281380/206553190-b5b8a1b8-454d-46a1-8b97-368d6a0632d6.png)
 
+## Special Thanks
+I want to give special thanks to @, @, and @ for ideas, input, and inspiration and @ for some PRs that make all our lives easier. 
+
 ## Licences
 
-  - - Prusa prfiles are under released under the [GNU AFFERO GENERAL PUBLIC LICENSE](LICENSE).
+  - Prusa profiles are under-released under the [GNU AFFERO GENERAL PUBLIC LICENSE](LICENSE).
 
 ## Changelog
 
