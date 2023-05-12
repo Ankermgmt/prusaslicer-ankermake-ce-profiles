@@ -12,7 +12,9 @@ mac_directories() {
     if [ -d "$HOME/Library/Application Support/PrusaSlicer-beta" ]; then
         directories+=("$HOME/Library/Application Support/PrusaSlicer-beta")
     fi
-
+    if [ -d "$HOME/Library/Application Support/AnkerMake_alpha-alpha" ]; then
+        directories+=("$HOME/Library/Application Support/AnkerMake_alpha-alpha")
+    fi
     printf '%s\n' "${directories[@]}"
 }
 

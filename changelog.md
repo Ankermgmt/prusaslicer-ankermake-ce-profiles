@@ -1,5 +1,10 @@
 # Changelog
 
+## v2.2.1
+
+- Removed overhang speed reduction in fast mode.
+- Added Ankermake alpha slicer to list of install locations for scripts.
+
 ## v2.2.0
 
 - Time estimates are much more accurate than previous versions

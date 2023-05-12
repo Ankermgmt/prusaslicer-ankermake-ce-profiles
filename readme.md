@@ -41,9 +41,11 @@ The configuration authors strongly believe there is no "one size fits all" profi
 
 ## Installing the profile
 
+For Either option be sure to download [PrusaSlicer-AMCE-Profile.zip](https://github.com/Ankermgmt/prusaslicer-ankermake-ce-profiles/releases/latest/download/PrusaSlicer-AMCE-Profile.zip)
+
 ### Scripted Install
 
-We now provide Bash and Powershell scripts to make installing/updating these profiles easier. 
+We now provide Bash and Powershell scripts to make installing/updating these profiles easier.
 
 Run `./install.sh` or `./install.ps1` to install/update the profiles.
 
@@ -57,7 +59,6 @@ Run `./install.sh` or `./install.ps1` to install/update the profiles.
 1. Open PrusaSlicer
 1. Under the Help Menu, choose "Show Configuration Folder" (keep this folder open for the next several steps).
 1. Close out of PrusaSlicer
-1. Download [PrusaSlicer-AMCE-Profile.zip](https://github.com/Ankermgmt/prusaslicer-ankermake-ce-profiles/releases/latest/download/PrusaSlicer-AMCE-Profile.zip)
 1. Extract the zip file to a location of your choice and open the folder.
 1. Copy the *"vendor"* folder to the Configuration folder you opened in step two.![image](https://user-images.githubusercontent.com/10281380/209450820-d98c5f82-07d5-453b-b5e1-11b294b257ac.png)
 
