@@ -84,11 +84,12 @@ Printing files via wifi is supported but not directly from PrusaSlicer. You may 
 1. Click print underneath the device details. ![image](https://user-images.githubusercontent.com/10281380/206553190-b5b8a1b8-454d-46a1-8b97-368d6a0632d6.png)
 
 ## Special Thanks
-I want to give special thanks to [@dmbaio](https://github.com/dmbaio) and [@TheMasterOfTech](https://github.com/TheMasterOfTech) for ideas, input, and inspiration and [@spuder](https://github.com/spuder) for some PRs that make all our lives easier. 
+
+I want to give special thanks to [@dmbaio](https://github.com/dmbaio) and [@TheMasterOfTech](https://github.com/TheMasterOfTech) for ideas, input, and inspiration and [@spuder](https://github.com/spuder) for some PRs that make all our lives easier.
 
 ## Licences
 
-  - Prusa profiles are under-released under the [GNU AFFERO GENERAL PUBLIC LICENSE](LICENSE).
+- Prusa profiles are under-released under the [GNU AFFERO GENERAL PUBLIC LICENSE](LICENSE).
 
 ## Changelog
 
