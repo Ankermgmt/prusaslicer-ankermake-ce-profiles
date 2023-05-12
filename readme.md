@@ -43,13 +43,14 @@ The configuration authors strongly believe there is no "one size fits all" profi
 
 ### Scripted Install
 
-We now provide Bash and Powershell scripts to make installing/updating these profiles easier.
+We now provide Bash and Powershell scripts to make installing/updating these profiles easier. 
 
 Run `./install.sh` or `./install.ps1` to install/update the profiles.
 
-1. Open the terminal/PowerShell window
-2. `cd ~/Downloads/PrusaSlicer-AMCE-Profile`
-3. run `./install.sh` (mac/Linux) or `.\install.ps1` (windows)
+1. Extract the zip files (Our example uses the download directory)
+2. Open the terminal/PowerShell window
+3. `cd ~/Downloads/PrusaSlicer-AMCE-Profile`
+4. run `./install.sh` (mac/Linux) or `.\install.ps1` (windows)
 
 ### Manual Install
 
