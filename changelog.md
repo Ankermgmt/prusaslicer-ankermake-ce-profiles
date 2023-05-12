@@ -1,5 +1,18 @@
 # Changelog
 
+## v2.2.0
+
+- Time estimates are much more accurate than previous versions
+- Added scripted install (thank you, @spuder)
+- Renamed old printer setup to "CLASSIC" and removed FAST from printer options  [more details are available in the readme.md](/readme.md#220-update-notice)
+- Allow higher quality profiles to be used in "FAST MODE."
+- Removed many unneeded settings that made no real difference
+- Tuned bridges (may still need some optimization)
+- Modified accelerations where they did not match firmware or provide better print quality.
+- Tuned printing speeds
+- Made default profiles have 3 perimeters
+- Fixed PETG temp bug
+
 ## v2.1.1
 
 - No changes to settings, fixing a version mismatch to avoid confusion.
