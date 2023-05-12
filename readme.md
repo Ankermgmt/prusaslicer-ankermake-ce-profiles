@@ -2,20 +2,27 @@
 
 [![GitHub release](https://img.shields.io/github/v/release/Ankermgmt/prusaslicer-ankermake-ce-profiles?display_name=tag&sort=semver&style=for-the-badge)](https://github.com/Ankermgmt/prusaslicer-ankermake-ce-profiles/releases/latest)
 
-![image](https://user-images.githubusercontent.com/10281380/231049563-ffde8326-08e2-4b79-9bfe-a261e1a01ed7.png)
+![image](https://github.com/Ankermgmt/prusaslicer-ankermake-ce-profiles/assets/10281380/77beb5cb-c6cb-4385-a266-0ff0e30ac9c2)
 
 ## 2.2.0 Update notice
+
 We have made significant changes to how the profiles are defined. You will now see a "CLASSIC" and a new regular printer. When Ankermake introduced the FAST MODE update, they introduced some new features unavailable for the original mode (our "CLASSIC" mode). "FAST SPEED" enabled:
 
 - S-Curve Acceleration
 - Newer linear advanced values
 - And, of course, higher speed and acceleration limits.
 
-After a few conversations with @dmhbai (thank you, friend), we thought those features should be able for all speeds and not just "FAST SPEED." We have decided to use the "FAST SPEED" enhancements for the default printer and named the original option provided by AnkerMake as a "CLASSIC" printer. The new regular mode will make some new noises that may surprise you. If you don't want these features or have concerns, choose the "CLASSIC" printer. Note that high-speed printing options are only available on regular (non-classic) printer.
+After a few conversations with [@dmbaio](https://github.com/dmbaio) (thank you, friend), we thought those features should be available for all speeds and not just "FAST SPEED." We have decided to use the "FAST SPEED" enhancements for the default printer and named the original option provided by AnkerMake as a "CLASSIC" printer. The new regular mode will make some new noises that may surprise you. If you don't want these features or have concerns, choose the "CLASSIC" printer. Note that high-speed printing options are only available on regular (non-classic) printer.
 
 ### A note about z-lift
 
-We have z-lift disabled by default on both printers as it impacts print times. If you find your nozzle scraping or plan on enabling ironing, enableing z-lift is highly recommended.
+We have z-lift disabled by default as it impacts print times. If you find your nozzle scraping surfaces or plan on using ironing, enabling z-lift is highly recommended. We recommend a .25 z-lift height.
+
+### Tuning (A.K.A. HELP WANTED)
+
+I have spent about two weeks tuning these profiles (while working a regular full-time job as well), and there is not enough time to ensure everything is perfect. Most of my tests have been run using PLA+ AnkerMake Gray filament at a .20 layer height. Please let me know if you find or dial in any setting that produces a higher quality or better result for any setting. You can fork the repo and make a PR, or if you are not comfortable with that, find me on the [AnkerMake community discord](https://discord.gg/ankermake) and share your config with me. I am @just-trey.
+
+[WE NOW HAVE AN INSTALL SCRIPT (YAY!)...](/readme.md#scripted-install)
 
 ## Overview
 
@@ -75,7 +82,7 @@ Printing files via wifi is supported but not directly from PrusaSlicer. You may 
 1. Click print underneath the device details. ![image](https://user-images.githubusercontent.com/10281380/206553190-b5b8a1b8-454d-46a1-8b97-368d6a0632d6.png)
 
 ## Special Thanks
-I want to give special thanks to @, @, and @ for ideas, input, and inspiration and @ for some PRs that make all our lives easier. 
+I want to give special thanks to [@dmbaio](https://github.com/dmbaio) and [@TheMasterOfTech](https://github.com/TheMasterOfTech) for ideas, input, and inspiration and [@spuder](https://github.com/spuder) for some PRs that make all our lives easier. 
 
 ## Licences
 
