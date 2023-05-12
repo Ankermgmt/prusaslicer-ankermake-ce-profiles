@@ -4,7 +4,7 @@
 
 - Time estimates are much more accurate than previous versions 
 - Added scripted install (thank you, @spuder)
-- Renamed old printer setup to "CLASSIC" and removed FAST from printer options  [more details are available in the readme.md](readme.md)
+- Renamed old printer setup to "CLASSIC" and removed FAST from printer options  [more details are available in the readme.md](/readme.md#220-update-notice)
 - Allow higher quality profiles to be used in "FAST MODE."
 - Removed many unneeded settings that made no real difference
 - Tuned bridges (may still need some optimization)
