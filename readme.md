@@ -6,10 +6,10 @@
 
 ## 2.2.0 Update notice
 
-We have made significant changes to how the profiles are defined. You will now see a "CLASSIC" and a new regular printer. When Ankermake introduced the FAST MODE update, they introduced some new features unavailable for the original mode (our "CLASSIC" mode). "FAST SPEED" enabled:
+We have made significant changes to how the profiles are defined. You will now see a "CLASSIC" and a new regular printer. When Ankermake introduced the FAST MODE update, they introduced some new features unavailable for the original mode (our "CLASSIC" mode). AnkerMake's "FAST SPEED" actually enables:
 
 - S-Curve Acceleration
-- Newer linear advanced values
+- Newer linear advanced and jerk settings
 - And, of course, higher speed and acceleration limits.
 
 After a few conversations with [@dmbaio](https://github.com/dmbaio) (thank you, friend), we thought those features should be available for all speeds and not just "FAST SPEED." We have decided to use the "FAST SPEED" enhancements for the default printer and named the original option provided by AnkerMake as a "CLASSIC" printer. The new regular mode will make some new noises that may surprise you. If you don't want these features or have concerns, choose the "CLASSIC" printer. Note that high-speed printing options are only available on regular (non-classic) printer.
