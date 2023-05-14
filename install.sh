@@ -30,6 +30,7 @@ linux_directories() {
 }
 
 # Detect the operating system and get the directories
+IFS=$'\n'
 directories=()
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     directories=($(linux_directories))
@@ -39,6 +40,7 @@ else
     echo "Unsupported operating system."
     exit 1
 fi
+IFS=' \t\n'
 
 # Check the number of directories found
 count=${#directories[@]}
