@@ -102,7 +102,7 @@ if [ "$overwrite" = true ]; then
         xdg-open "$dest_dir" || true
     fi
 
-    script_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+    script_dir=$(dirname "$0")
 
     # Copy the directory and files recursively
     cp -R "$script_dir/vendor/${files[0]}" "$dest_dir"
