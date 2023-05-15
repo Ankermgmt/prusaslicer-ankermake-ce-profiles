@@ -50,7 +50,9 @@ Run `./install.sh` or `./install.ps1` to install/update the profiles.
 1. Extract the zip files (Our example uses the download directory)
 2. Open the terminal/PowerShell window
 3. `cd ~/Downloads/PrusaSlicer-AMCE-Profile`
-4. run `./install.sh` (mac/Linux) or `.\install.ps1` (windows)
+4. On windows, depending on your Execution policy, you may need to change the execution policy to run the powershell script. Use the following to change
+   the execution policy for the current terminal session only by opening a powershell prompt in the current directory and then typing `Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process`
+5. run `./install.sh` (mac/Linux) or `.\install.ps1` (windows)
 
 ### Manual Install
 
