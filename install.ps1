@@ -6,6 +6,10 @@ $prusaSlicerDirs = @(
     $HOME + '\AppData\Roaming\PrusaSlicer'
     $HOME + '\AppData\Roaming\PrusaSlicer-alpha'
     $HOME + '\AppData\Roaming\PrusaSlicer-beta'
+    $HOME + '\AppData\Roaming\AnkerMake_alpha-alpha'
+    $HOME + '\AppData\Roaming\SuperSlicer'
+    $HOME + '\AppData\Roaming\SuperSlicer-alpha'
+    $HOME + '\AppData\Roaming\SuperSlicer-beta'
 )
 
 foreach ($dir in $prusaSlicerDirs) {

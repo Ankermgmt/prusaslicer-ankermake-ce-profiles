@@ -2,6 +2,7 @@
 
 # Function to check for macOS PrusaSlicer directories
 mac_directories() {
+    # Prusa Slicer
     if [ -d "$HOME/Library/Application Support/PrusaSlicer" ]; then
         echo "$HOME/Library/Application Support/PrusaSlicer"
     fi
@@ -11,10 +12,26 @@ mac_directories() {
     if [ -d "$HOME/Library/Application Support/PrusaSlicer-beta" ]; then
         echo "$HOME/Library/Application Support/PrusaSlicer-beta"
     fi
+    # Anker Slicer
+    if [ -d "$HOME/Library/Application Support/AnkerMake_alpha-alpha" ]; then
+        echo "$HOME/Library/Application Support/AnkerMake_alpha-alpha"
+    fi
+    # Super Slicer
+    if [ -d "$HOME/Library/Application Support/SuperSlicer" ]; then
+        echo "$HOME/Library/Application Support/SuperSlicer"
+    fi
+    if [ -d "$HOME/Library/Application Support/SuperSlicer-alpha" ]; then
+        echo "$HOME/Library/Application Support/SuperSlicer-alpha"
+    fi
+    if [ -d "$HOME/Library/Application Support/SuperSlicer-beta" ]; then
+        echo "$HOME/Library/Application Support/SuperSlicer-beta"
+    fi
+
 }
 
 # Function to check for Linux PrusaSlicer directories
 linux_directories() {
+    # Prusa Slicer
     if [ -d "$HOME/.PrusaSlicer" ]; then
         echo "$HOME/.PrusaSlicer"
     fi
@@ -26,6 +43,23 @@ linux_directories() {
     fi
     if [ -d "$HOME/.config/PrusaSlicer-beta" ]; then
         echo "$HOME/.config/PrusaSlicer-beta"
+    fi
+    # Anker Slicer
+    if [ -d "$HOME/.config/AnkerMake_alpha-alpha" ]; then
+        echo "$HOME/.config/AnkerMake_alpha-alpha"
+    fi
+    # Super Slicer
+    if [ -d "$HOME/.SuperSlicer" ]; then
+        echo "$HOME/.SuperSlicer"
+    fi
+    if [ -d "$HOME/.config/SuperSlicer" ]; then
+        echo "$HOME/.config/SuperSlicer"
+    fi
+    if [ -d "$HOME/.config/SuperSlicer-alpha" ]; then
+        echo "$HOME/.config/SuperSlicer-alpha"
+    fi
+    if [ -d "$HOME/.config/SuperSlicer-beta" ]; then
+        echo "$HOME/.config/SuperSlicer-beta"
     fi
 }
 
