@@ -1,12 +1,9 @@
-name: Manual Publish
+name: Attach Files to Release
 
 on:
-  workflow_dispatch:
-    inputs:
-      tag:
-        description: 'Release Tag'
-        required: true
-        type: string
+  push:
+    tags:
+      - '*'
 
 jobs:
   build:
