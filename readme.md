@@ -33,7 +33,12 @@ The configuration authors strongly believe there is no "one size fits all" profi
 
 ## Installing the profile
 
-For Either option be sure to download [PrusaSlicer-AMCE-Profile.zip](https://github.com/Ankermgmt/prusaslicer-ankermake-ce-profiles/releases/latest/download/PrusaSlicer-AMCE-Profile.zip)
+You have 3 ways provided to install the profiles:
+- [Scripted Install](#scripted-install)
+- [Manual Install](#manual-install)
+- [Import Profiles](#import-profiles) (only recommended for installing into AnkerMake_alpha slicer and Super Slicer) 
+
+For all options, be sure to download [PrusaSlicer-AMCE-Profile.zip](https://github.com/Ankermgmt/prusaslicer-ankermake-ce-profiles/releases/latest/download/PrusaSlicer-AMCE-Profile.zip)
 
 ### Scripted Install
 
@@ -47,6 +52,7 @@ Run `./install.sh` or `./install.ps1` to install/update the profiles.
 4. On windows, depending on your Execution policy, you may need to change the execution policy to run the powershell script. Use the following to change
    the execution policy for the current terminal session only by opening a powershell prompt in the current directory and then typing `Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process`
 5. run `./install.sh` (mac/Linux) or `.\install.ps1` (windows)
+6. (Add the printer)(#adding-the-printer-only-needed-for-scripted-install-and-manual-install)
 
 ### Manual Install
 
@@ -55,8 +61,17 @@ Run `./install.sh` or `./install.ps1` to install/update the profiles.
 1. Close out of PrusaSlicer
 1. Extract the zip file to a location of your choice and open the folder.
 1. Copy the *"vendor"* folder to the Configuration folder you opened in step two.![image](https://user-images.githubusercontent.com/10281380/209450820-d98c5f82-07d5-453b-b5e1-11b294b257ac.png)
+6. (Add the printer)(#adding-the-printer-only-needed-for-scripted-install-and-manual-install)
 
-## Installing the printer
+### Import Profiles
+
+1. Extract the zip file to a location of your choice and open the folder.
+1. Open the AnkerMake Alpha slicer
+1. Go to File -> Import -> Import Config Bundle
+2. Locate 'AMCE_config_bundle.ini' in the extracted zip location and click open.
+3. On the printer setting panel, select 'AnkerMake M5 (0.4 nozzle) @AMCE', then choose the filament and Print settings you would like to use.
+
+## Adding the printer (only needed for Scripted Install and Manual Install)
 
 1. Open PrusaSlicer and you should now be able to add a new AnkerMake M5 CE Printer. (printer Settings tab → Printer drop-down → Add/remove printers
 1. In the Configuration Wizard, choose Other Vendors:
