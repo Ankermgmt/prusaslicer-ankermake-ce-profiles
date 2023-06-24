@@ -1,40 +1,41 @@
 # Look for PrusaSlicer config directory
 $selection
-$availablePrusaSlicerDirs = @()
+$availableApps = @()
 
-$prusaSlicerDirs = @(
-    $HOME + '\AppData\Roaming\PrusaSlicer'
-    $HOME + '\AppData\Roaming\PrusaSlicer-alpha'
-    $HOME + '\AppData\Roaming\PrusaSlicer-beta'
-    $HOME + '\AppData\Roaming\AnkerMake_alpha-alpha'
+$compatibleApps = @(
+    [pscustomobject]@{appName = 'PrusaSlicer'; directory = $HOME + '\AppData\Roaming\PrusaSlicer' }
+    [pscustomobject]@{appName = 'PrusaSlicer Alpha'; directory = $HOME + '\AppData\Roaming\PrusaSlicer-alpha' }
+    [pscustomobject]@{appName = 'PrusaSlicer Beta'; directory = $HOME + '\AppData\Roaming\PrusaSlicer-beta' }
+    # [pscustomobject]@{appName = 'AnkerMake Alpha'; directory = $HOME + '\AppData\Roaming\AnkerMake_alpha-alpha' }
 )
 
-foreach ($dir in $prusaSlicerDirs) {
-    if (Test-Path -Path $dir) {
-        $availablePrusaSlicerDirs += $dir
+foreach ($app in $compatibleApps) {
+    if (Test-Path -Path $app.directory) {
+        Write-Host 'dir: '+ $app.directory + ' app: ' + $app.appName
+        $availableApps += $app
     }
 }
 
 # Check if any PrusaSlicer config directory exists
-if ($availablePrusaSlicerDirs.Length -eq 0) {
-    Write-Host "PrusaSlicer config directory not found."
+if ($availableApps.Length -eq 0) {
+    Write-Host "No compatible applications found."
     exit 1
 }
 
-If ($availablePrusaSlicerDirs.Length -gt 1) {
-    Write-Host "Multiple PrusaSlicer directories found."
+If ($availableApps.Length -gt 1) {
+    Write-Host "Multiple compatible applications found."
     Write-Host "Please choose which one you want to install the profiles to:"
 
     # Build the choices menu
     $choices = @()
-    For ($index = 0; $index -lt $availablePrusaSlicerDirs.Count; $index++) {
-        Write-Host "[$index] $($availablePrusaSlicerDirs[$index])"
+    For ($index = 0; $index -lt $availableApps.Count; $index++) {
+        Write-Host "[$index] $($availableApps[$index].appName)"
         # $choices += New-Object System.Management.Automation.Host.ChoiceDescription [$index], ($availablePrusaSlicerDirs[$index])
     }
     $chosen = Read-host [Your selection]
-    $selection = $availablePrusaSlicerDirs[$chosen]
+    $selection = $availableApps[$chosen].directory
 }
-else { $selection = $availablePrusaSlicerDirs[0] }
+else { $selection = $availableApps[0].directory }
 
 Write-Host $selection
 

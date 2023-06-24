@@ -4,17 +4,17 @@
 
 ![image](https://github.com/Ankermgmt/prusaslicer-ankermake-ce-profiles/assets/10281380/77beb5cb-c6cb-4385-a266-0ff0e30ac9c2)
 
-## 2.2.0 Update notice
-
-We have made significant changes to how the profiles are defined. You will now see a "CLASSIC" and a new regular printer. When Ankermake introduced the FAST MODE update, they introduced some new features unavailable for the original mode (our "CLASSIC" mode). AnkerMake's "FAST SPEED" actually enables:
-
-- S-Curve Acceleration
-- Newer linear advanced and jerk settings
-- And, of course, higher speed and acceleration limits.
-
 ![image](https://github.com/Ankermgmt/prusaslicer-ankermake-ce-profiles/assets/10281380/74403731-ea59-402a-aa6c-be65c6b27891)
 
-After a few conversations with [@dmbaio](https://github.com/dmbaio) (thank you, friend), we thought those features should be available for all speeds and not just "FAST SPEED." We have decided to use the "FAST SPEED" enhancements for the default printer and named the original option provided by AnkerMake as a "CLASSIC" printer. The new regular mode will make some new noises that may surprise you. If you don't want these features or have concerns, choose the "CLASSIC" printer. Note that high-speed printing options are only available on regular (non-classic) printer.
+[WE NOW HAVE AN INSTALL SCRIPT (YAY!)...](/readme.md#scripted-install)
+
+## Overview
+
+This repository holds the latest version and updates to AnkerMake community profiles [initially developed and maintained by @just-trey](https://github.com/just-trey/ankermake-m5-profile). We have decided to continue to support these profiles to allow users an alternative to the official profiles provided by AnkerMake. You can install these profiles alongside the built-in AnkerMake profiles. Why not install both and see which one you prefer?
+
+### "FAST" modes
+
+Please note that the FAST included is not the max acceleration and speed the M% can perform. Higher speed can be achieved by adjusting the speed and acceleration. We found the setting (thanks @Xelinor) provided to be the best compromise for quality vs. speed.
 
 ### A note about z-lift
 
@@ -22,13 +22,7 @@ We have z-lift disabled by default as it impacts print times. If you find your n
 
 ### Tuning (A.K.A. HELP WANTED)
 
-I have spent about two weeks tuning these profiles (while working a regular full-time job as well), and there is not enough time to ensure everything is perfect. Most of my tests have been run using PLA+ AnkerMake Gray filament at a .20 layer height. Please let me know if you find or dial in any setting that produces a higher quality or better result for any setting. You can fork the repo and make a PR, or if you are not comfortable with that, find me on the [AnkerMake community discord](https://discord.gg/ankermake) and share your config with me. I am @just-trey.
-
-[WE NOW HAVE AN INSTALL SCRIPT (YAY!)...](/readme.md#scripted-install)
-
-## Overview
-
-This repository holds the latest version and updates to AnkerMake community profiles [initially developed and maintained by @just-trey](https://github.com/just-trey/ankermake-m5-profile). We have decided to continue to support these profiles to allow users an alternative to the official profiles provided by AnkerMake. You can install these profiles alongside the built-in AnkerMake profiles. Why not install both and see which one you prefer?
+I have spent about two weeks tuning these profiles (while working a regular full-time job as well), and there is not enough time to ensure everything is perfect. Most of my tests have been run using PLA+ AnkerMake Gray filamentt. Please let me know if you find or dial in any setting that produces a higher quality or better result for any setting. You can fork the repo and make a PR, or if you are not comfortable with that, find me on the [AnkerMake community discord](https://discord.gg/ankermake) and share your config with me. I am @just-trey.
 
 ## Known Issues
 
