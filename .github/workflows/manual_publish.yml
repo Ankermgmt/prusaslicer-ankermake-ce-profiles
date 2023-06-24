@@ -10,9 +10,16 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Zip-Release4cpp
-        uses: darshitsri/zip-release@v3
-        with:
-          # Filename for archive
-          filename: PrusaSlicer-AMCE-Profile.zip
-          exclusions: .\.github\.*, \.git.* , CODEOWNERS, LICENCE, changelog.md, readme.md
+      - name: Zip configuraiton files
+        run: zip -r PrusaSlicer-AMCE-Profile.zip vendor
+
+      - name: Zip add install files
+        run: zip -u PrusaSlicer-AMCE-Profile.zip install.ps1 install.sh
+
+      - name: Upload GitHub release assets
+          uses: vesoft-inc/upload-assets@v1.0.0
+          with:
+            asset-path: ./PrusaSlicer-AMCE-Profile.zip
+
+      - name: Remove Zip configuraiton files
+        run: rm PrusaSlicer-AMCE-Profile.zip
