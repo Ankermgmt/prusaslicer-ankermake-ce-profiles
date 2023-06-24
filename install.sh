@@ -11,6 +11,7 @@ mac_directories() {
     if [ -d "$HOME/Library/Application Support/PrusaSlicer-beta" ]; then
         echo "$HOME/Library/Application Support/PrusaSlicer-beta"
     fi
+    printf '%s\n' "${directories[@]}"
 }
 
 # Function to check for Linux PrusaSlicer directories

@@ -1,5 +1,27 @@
 # Changelog
 
+## v2.3.0
+
+- Removed classic mode printer and tuned profiles to match performance
+- Added ooze reduction temps to start g-code (inspired by the Technical Ace's profiles)
+- Removed any settings that matched PrusaSlicer's default or have been deprecated to simplify configuration
+- Removed overhang speed reduction in fast mode.
+- Set organic supports as the default. support method
+- Tuning adjustments:
+  - Enabled external_perimeters_first on fast mode for a SIGNIFICANT increase in surface quality
+  - Modified gcode_resolution for finer slicing details
+  - Modified the following to improve speeds
+    - max_print_speed
+    - solid_infill_speed
+    - travel_acceleration
+  - Modified the following to get smoother perimeters:
+    - perimeter_acceleration
+    - small_perimeter_speed
+  - Modified skirt_distance to bring it slightly closer to print
+  - first_layer_height now matches other layer heights
+  - slight adjustments to better tune filaments
+  - cleaned up windows install script
+
 ## v2.2.0
 
 - Time estimates are much more accurate than previous versions
