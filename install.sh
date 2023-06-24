@@ -2,54 +2,57 @@
 
 # Function to check for macOS PrusaSlicer directories
 mac_directories() {
-    directories=()
     if [ -d "$HOME/Library/Application Support/PrusaSlicer" ]; then
-        directories+=("$HOME/Library/Application Support/PrusaSlicer")
+        echo "$HOME/Library/Application Support/PrusaSlicer"
     fi
     if [ -d "$HOME/Library/Application Support/PrusaSlicer-alpha" ]; then
-        directories+=("$HOME/Library/Application Support/PrusaSlicer-alpha")
+        echo "$HOME/Library/Application Support/PrusaSlicer-alpha"
     fi
     if [ -d "$HOME/Library/Application Support/PrusaSlicer-beta" ]; then
-        directories+=("$HOME/Library/Application Support/PrusaSlicer-beta")
+        echo "$HOME/Library/Application Support/PrusaSlicer-beta"
     fi
-
     printf '%s\n' "${directories[@]}"
 }
 
 # Function to check for Linux PrusaSlicer directories
 linux_directories() {
-    directories=()
-    #TODO: Test and verify which directories show up on linux systems
     if [ -d "$HOME/.PrusaSlicer" ]; then
-        directories+=("$HOME/.PrusaSlicer")
+        echo "$HOME/.PrusaSlicer"
     fi
-
-    printf '%s\n' "${directories[@]}"
+    if [ -d "$HOME/.config/PrusaSlicer" ]; then
+        echo "$HOME/.config/PrusaSlicer"
+    fi
+    if [ -d "$HOME/.config/PrusaSlicer-alpha" ]; then
+        echo "$HOME/.config/PrusaSlicer-alpha"
+    fi
+    if [ -d "$HOME/.config/PrusaSlicer-beta" ]; then
+        echo "$HOME/.config/PrusaSlicer-beta"
+    fi
 }
 
-# Detect the operating system
+# Detect the operating system and get the directories
+IFS=$'\n'
+directories=()
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
-    # Linux
-    PRUSASLICER_DIR=$(linux_directories)
+    directories=($(linux_directories))
 elif [[ "$OSTYPE" == "darwin"* ]]; then
-    # MacOS
-    PRUSASLICER_DIR=$(mac_directories)
+    directories=($(mac_directories))
 else
     echo "Unsupported operating system."
     exit 1
 fi
+IFS=' \t\n'
 
 # Check the number of directories found
-count=$(echo "$PRUSASLICER_DIR" | wc -l)
+count=${#directories[@]}
 if [ "$count" -eq 0 ]; then
     echo "PrusaSlicer directories not found."
     exit 1
 elif [ "$count" -eq 1 ]; then
-    chosen_dir=$(echo "$PRUSASLICER_DIR" | head -1)
+    chosen_dir="${directories[0]}"
 else
     echo "Multiple PrusaSlicer directories found."
     echo "Please choose which one you want to use:"
-    IFS=$'\n' read -r -d '' -a directories <<< "$PRUSASLICER_DIR"
     select slicer_dir in "${directories[@]}"; do
         chosen_dir="$slicer_dir"
         break
@@ -57,8 +60,6 @@ else
 fi
 
 echo "You chose: $chosen_dir"
-
-# Continue with further actions using "$chosen_dir"
 
 # Destination directory
 dest_dir="$chosen_dir/vendor"
@@ -102,10 +103,12 @@ if [ "$overwrite" = true ]; then
         xdg-open "$dest_dir" || true
     fi
 
+    script_dir=$(dirname "$0")
+
     # Copy the directory and files recursively
-    cp -R "vendor/${files[0]}" "$dest_dir"
-    cp "vendor/${files[1]}" "$dest_dir"
-    cp "vendor/${files[2]}" "$dest_dir"
+    cp -R "$script_dir/vendor/${files[0]}" "$dest_dir"
+    cp "$script_dir/vendor/${files[1]}" "$dest_dir"
+    cp "$script_dir/vendor/${files[2]}" "$dest_dir"
     
     echo "Files and directory copied successfully."
 fi
