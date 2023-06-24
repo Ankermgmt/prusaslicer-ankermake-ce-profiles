@@ -4,8 +4,6 @@
 
 ![image](https://github.com/Ankermgmt/prusaslicer-ankermake-ce-profiles/assets/10281380/77beb5cb-c6cb-4385-a266-0ff0e30ac9c2)
 
-![image](https://github.com/Ankermgmt/prusaslicer-ankermake-ce-profiles/assets/10281380/74403731-ea59-402a-aa6c-be65c6b27891)
-
 [WE NOW HAVE AN INSTALL SCRIPT (YAY!)...](/readme.md#scripted-install)
 
 ## Overview
