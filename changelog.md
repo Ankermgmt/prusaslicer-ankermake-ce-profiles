@@ -1,5 +1,11 @@
 # Changelog
 
+## v2.3.1
+
+- *NOTE:* No profile setting changes have been made in this version
+- Added config bundle to allow import to AnkerMake Alpha Slicer
+- Enhanced build workflow
+
 ## v2.3.0
 
 - Removed classic mode printer and tuned profiles to match performance
