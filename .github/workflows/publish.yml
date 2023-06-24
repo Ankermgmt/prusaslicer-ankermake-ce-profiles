@@ -13,32 +13,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Create release directory
-        run: mkdir release
-
-      - name: Copy vendor files
-        run: cp -r vendor release/vendor
-
-      - name: Copy scripts
-        run: |
-          if [ -f install.sh ]; then
-            cp install.sh release/install.sh
-          fi
-          if [ -f install.ps1 ]; then
-            cp install.ps1 release/install.ps1
-          fi
-
-      - name: Zip Release
-        uses: TheDoctor0/zip-release@0.7.1
+      - name: Zip-Release4cpp
+        uses: darshitsri/zip-release@v3
         with:
-          type: 'zip'
-          directory: 'release'
-
-      - name: Upload Release
-        uses: ncipollo/release-action@v1.12.0
-        with:
-          artifacts: "PrusaSlicer-AMCE-Profile.zip"
-          draft: false
-          generateReleaseNotes: false
-          prerelease: false
-          bodyFile: release.md
+        # Filename for archive
+          filename: PrusaSlicer-AMCE-Profile.zip
+          exclusions: .\.github\.*, \.git.* , CODEOWNERS, LICENCE, changelog.md, readme.md
