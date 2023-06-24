@@ -1,4 +1,4 @@
-# PrusaSlicer 2.6-alpha AnkerMake Community Profiles
+# PrusaSlicer 2.6 AnkerMake Community Profiles
 
 [![GitHub release](https://img.shields.io/github/v/release/Ankermgmt/prusaslicer-ankermake-ce-profiles?display_name=tag&sort=semver&style=for-the-badge)](https://github.com/Ankermgmt/prusaslicer-ankermake-ce-profiles/releases/latest)
 
