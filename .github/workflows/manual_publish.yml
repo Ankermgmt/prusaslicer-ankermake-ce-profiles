@@ -1,6 +1,12 @@
 name: Manual Publish
 
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Release Tag'
+        required: true
+        type: string
 
 jobs:
   build:
@@ -14,12 +20,13 @@ jobs:
         run: zip -r PrusaSlicer-AMCE-Profile.zip vendor
 
       - name: Zip add install files
-        run: zip -u PrusaSlicer-AMCE-Profile.zip install.ps1 install.sh
+        run: zip -u PrusaSlicer-AMCE-Profile.zip install.ps1 install.sh AMCE_config_bundle.ini
 
-      - name: Upload GitHub release assets
-          uses: vesoft-inc/upload-assets@v1.0.0
-          with:
-            asset-path: ./PrusaSlicer-AMCE-Profile.zip
+      - name: Add asset to release
+        uses: djn24/add-asset-to-release@v2
+        with:
+          token: ${{secrets.GITHUB_TOKEN}}
+          path: './PrusaSlicer-AMCE-Profile.zip'
 
       - name: Remove Zip configuraiton files
         run: rm PrusaSlicer-AMCE-Profile.zip
