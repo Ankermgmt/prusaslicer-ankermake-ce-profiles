@@ -2,9 +2,9 @@
 
 ## v2.3.1
 
-- *NOTE:* No profile setting changes have been made in this version
 - Added config bundle to allow import to AnkerMake Alpha Slicer
-- Enhanced build workflow
+- Removed build workflow is it was not working
+- fixed minor issue with brim settings behavior
 
 ## v2.3.0
 
