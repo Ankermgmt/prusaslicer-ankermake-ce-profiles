@@ -2,6 +2,7 @@
 
 ## v2.3.1
 
+- fixed pattern match so fast profiles are available
 - Added config bundle to allow import to AnkerMake Alpha Slicer
 - Removed build workflow is it was not working
 - fixed minor issue with brim settings behavior
