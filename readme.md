@@ -34,9 +34,10 @@ The configuration authors strongly believe there is no "one size fits all" profi
 ## Installing the profile
 
 You have 3 ways provided to install the profiles:
+
 - [Scripted Install](#scripted-install)
 - [Manual Install](#manual-install)
-- [Import Profiles](#import-profiles) (only recommended for installing into AnkerMake_alpha slicer and Super Slicer) 
+- [Import Profiles](#import-profiles) (only recommended for installing into AnkerMake_alpha slicer and Super Slicer)
 
 For all options, be sure to download [PrusaSlicer-AMCE-Profile.zip](https://github.com/Ankermgmt/prusaslicer-ankermake-ce-profiles/releases/latest/download/PrusaSlicer-AMCE-Profile.zip)
 
@@ -93,10 +94,6 @@ Printing files via wifi is supported but not directly from PrusaSlicer. You may 
 1. Click on the Device tab
 1. Click on the My Computer icon and select your sliced file. ![image](https://user-images.githubusercontent.com/10281380/206552887-486043c2-3329-4105-ad99-438bf1f64516.png)
 1. Click print underneath the device details. ![image](https://user-images.githubusercontent.com/10281380/206553190-b5b8a1b8-454d-46a1-8b97-368d6a0632d6.png)
-
-## Special Thanks
-
-I want to give special thanks to [@dmbaio](https://github.com/dmbaio) and [@TheMasterOfTech](https://github.com/TheMasterOfTech) for ideas, input, and inspiration and [@spuder](https://github.com/spuder) for some PRs that make all our lives easier.
 
 ## Licences
 
