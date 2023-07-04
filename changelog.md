@@ -6,6 +6,7 @@
 - Added Lukagra's filament change gcode (better than just M600)
 - Slightly modified extrusion widths
 - Removed extruder default color so chosen filament color is used in the preview thumbnail
+- Removed duplicate filaments in the config bundle version
 
 ## v2.3.1
 
