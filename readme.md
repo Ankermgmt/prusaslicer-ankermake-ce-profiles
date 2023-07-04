@@ -12,15 +12,11 @@ This repository holds the latest version and updates to AnkerMake community prof
 
 ### "FAST" modes
 
-Please note that the FAST included is not the max acceleration and speed the M% can perform. Higher speed can be achieved by adjusting the speed and acceleration. We found the setting (thanks @Xelinor) provided to be the best compromise for quality vs. speed.
+Please note that the FAST profile included is NOT the max acceleration and speed the printer can perform. Higher speed can be achieved by adjusting the speed and acceleration. We found the setting (thanks @Xelinor) provided to be the best compromise for quality vs. speed.
 
 ### A note about z-lift
 
-We have z-lift disabled by default as it impacts print times. If you find your nozzle scraping surfaces or plan on using ironing, enabling z-lift is highly recommended. We recommend a .25 z-lift height.
-
-### Tuning (A.K.A. HELP WANTED)
-
-I have spent about two weeks tuning these profiles (while working a regular full-time job as well), and there is not enough time to ensure everything is perfect. Most of my tests have been run using PLA+ AnkerMake Gray filamentt. Please let me know if you find or dial in any setting that produces a higher quality or better result for any setting. You can fork the repo and make a PR, or if you are not comfortable with that, find me on the [AnkerMake community discord](https://discord.gg/ankermake) and share your config with me. I am @just-trey.
+We have z-lift disabled by default as it impacts print times. If you find your nozzle scraping surfaces, plan on manual filament changes mid-print, or are using ironing, enabling z-lift is highly recommended. We recommend a .25 z-lift height.
 
 ## Known Issues
 

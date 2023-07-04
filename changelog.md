@@ -1,5 +1,12 @@
 # Changelog
 
+## v2.3.2
+
+- Improved PETG settings (by @Xelinor)
+- Added Lukagra's filament change gcode (better than just M600)
+- Slightly modified extrusion widths
+- Removed extruder default color so chosen filament color is used in the preview thumbnail
+
 ## v2.3.1
 
 - fixed pattern match so fast profiles are available
