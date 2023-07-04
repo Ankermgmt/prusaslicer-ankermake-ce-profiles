@@ -12,15 +12,11 @@ This repository holds the latest version and updates to AnkerMake community prof
 
 ### "FAST" modes
 
-Please note that the FAST included is not the max acceleration and speed the M% can perform. Higher speed can be achieved by adjusting the speed and acceleration. We found the setting (thanks @Xelinor) provided to be the best compromise for quality vs. speed.
+Please note that the FAST profile included is NOT the max acceleration and speed the printer can perform. Higher speed can be achieved by adjusting the speed and acceleration. We found the setting (thanks @Xelinor) provided to be the best compromise for quality vs. speed.
 
 ### A note about z-lift
 
-We have z-lift disabled by default as it impacts print times. If you find your nozzle scraping surfaces or plan on using ironing, enabling z-lift is highly recommended. We recommend a .25 z-lift height.
-
-### Tuning (A.K.A. HELP WANTED)
-
-I have spent about two weeks tuning these profiles (while working a regular full-time job as well), and there is not enough time to ensure everything is perfect. Most of my tests have been run using PLA+ AnkerMake Gray filamentt. Please let me know if you find or dial in any setting that produces a higher quality or better result for any setting. You can fork the repo and make a PR, or if you are not comfortable with that, find me on the [AnkerMake community discord](https://discord.gg/ankermake) and share your config with me. I am @just-trey.
+We have z-lift disabled by default as it impacts print times. If you find your nozzle scraping surfaces, plan on manual filament changes mid-print, or are using ironing, enabling z-lift is highly recommended. We recommend a .25 z-lift height.
 
 ## Known Issues
 
@@ -34,9 +30,10 @@ The configuration authors strongly believe there is no "one size fits all" profi
 ## Installing the profile
 
 You have 3 ways provided to install the profiles:
+
 - [Scripted Install](#scripted-install)
 - [Manual Install](#manual-install)
-- [Import Profiles](#import-profiles) (only recommended for installing into AnkerMake_alpha slicer and Super Slicer) 
+- [Import Profiles](#import-profiles) (only recommended for installing into AnkerMake_alpha slicer and Super Slicer)
 
 For all options, be sure to download [PrusaSlicer-AMCE-Profile.zip](https://github.com/Ankermgmt/prusaslicer-ankermake-ce-profiles/releases/latest/download/PrusaSlicer-AMCE-Profile.zip)
 
@@ -93,10 +90,6 @@ Printing files via wifi is supported but not directly from PrusaSlicer. You may 
 1. Click on the Device tab
 1. Click on the My Computer icon and select your sliced file. ![image](https://user-images.githubusercontent.com/10281380/206552887-486043c2-3329-4105-ad99-438bf1f64516.png)
 1. Click print underneath the device details. ![image](https://user-images.githubusercontent.com/10281380/206553190-b5b8a1b8-454d-46a1-8b97-368d6a0632d6.png)
-
-## Special Thanks
-
-I want to give special thanks to [@dmbaio](https://github.com/dmbaio) and [@TheMasterOfTech](https://github.com/TheMasterOfTech) for ideas, input, and inspiration and [@spuder](https://github.com/spuder) for some PRs that make all our lives easier.
 
 ## Licences
 
