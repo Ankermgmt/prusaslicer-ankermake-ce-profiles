@@ -1,5 +1,9 @@
 # Changelog
 
+## v2.3.3
+
+- Added New Profile fro TPU (by @natescherer)
+
 ## v2.3.2
 
 - Improved PETG settings (by @Xelinor)
