@@ -1,5 +1,10 @@
 # Changelog
 
+## v2.3.3
+
+- Added New Profile for TPU (by @natescherer)
+- switched primary branch from "master" to "main"
+
 ## v2.3.2
 
 - Improved PETG settings (by @Xelinor)
@@ -57,7 +62,7 @@
 
 ## v2.1.0
 
-- This version enables a fast mode consistently. See the [readme.md](https://github.com/Ankermgmt/prusaslicer-ankermake-ce-profiles/blob/master/readme.md) for more details.
+- This version enables a fast mode consistently. See the [readme.md](https://github.com/Ankermgmt/prusaslicer-ankermake-ce-profiles/blob/main/readme.md) for more details.
 - New community edition M5 icon for the configuration wizard
 - Optimized bottom and top surface patterns for regular profiles. (monotonic lines)
 - Tuned some speed settings and moved to percentages where possible.

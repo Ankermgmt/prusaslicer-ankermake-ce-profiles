@@ -4,8 +4,6 @@
 
 ![image](https://github.com/Ankermgmt/prusaslicer-ankermake-ce-profiles/assets/10281380/77beb5cb-c6cb-4385-a266-0ff0e30ac9c2)
 
-[WE NOW HAVE AN INSTALL SCRIPT (YAY!)...](/readme.md#scripted-install)
-
 ## Overview
 
 This repository holds the latest version and updates to AnkerMake community profiles [initially developed and maintained by @just-trey](https://github.com/just-trey/ankermake-m5-profile). We have decided to continue to support these profiles to allow users an alternative to the official profiles provided by AnkerMake. You can install these profiles alongside the built-in AnkerMake profiles. Why not install both and see which one you prefer?
@@ -16,7 +14,7 @@ Please note that the FAST profile included is NOT the max acceleration and speed
 
 ### A note about z-lift
 
-We have z-lift disabled by default as it impacts print times. If you find your nozzle scraping surfaces, plan on manual filament changes mid-print, or are using ironing, enabling z-lift is highly recommended. We recommend a .25 z-lift height.
+We have z-lift disabled by default as it impacts print times. If you find your nozzle scraping surfaces, plan on manual filament changes mid-print, or are using ironing, enabling z-lift is highly recommended. We recommend at least a .25 z-lift height.
 
 ## Known Issues
 
