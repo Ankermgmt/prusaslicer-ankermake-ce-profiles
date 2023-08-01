@@ -6,7 +6,7 @@
 
 ## Overview
 
-This repository holds the latest version and updates to AnkerMake community profiles [initially developed and maintained by @just-trey](https://github.com/just-trey/ankermake-m5-profile). We have decided to continue to support these profiles to allow users an alternative to the official profiles provided by AnkerMake. You can install these profiles alongside the built-in AnkerMake profiles. Why not install both and see which one you prefer?
+This repository holds the latest version and updates to AnkerMake M5 andAnkerMake M5C community profiles for the [initially developed and maintained by @just-trey](https://github.com/just-trey/ankermake-m5-profile). We have decided to continue to support these profiles to allow users an alternative to the official profiles provided by AnkerMake. You can install these profiles alongside the built-in AnkerMake profiles. Why not install both and see which one you prefer?
 
 ### "FAST" modes
 
@@ -64,11 +64,11 @@ Run `./install.sh` or `./install.ps1` to install/update the profiles.
 1. Open the AnkerMake Alpha slicer
 1. Go to File -> Import -> Import Config Bundle
 2. Locate 'AMCE_config_bundle.ini' in the extracted zip location and click open.
-3. On the printer setting panel, select 'AnkerMake M5 (0.4 nozzle) @AMCE', then choose the filament and Print settings you would like to use.
+3. On the printer setting panel, select 'AnkerMake M5 (0.4 nozzle) @AMCE' or 'AnkerMake M5C (0.4 nozzle) @AMCE', then choose the filament and Print settings you would like to use.
 
 ## Adding the printer (only needed for Scripted Install and Manual Install)
 
-1. Open PrusaSlicer and you should now be able to add a new AnkerMake M5 CE Printer. (printer Settings tab → Printer drop-down → Add/remove printers
+1. Open PrusaSlicer and you should now be able to add a new AnkerMake M5 or M5C CE Printer. (printer Settings tab → Printer drop-down → Add/remove printers
 1. In the Configuration Wizard, choose Other Vendors:
 1. Select the AnkerMake CE Checkbox
 1. Select AnkerMake CE FFF under the left menu
