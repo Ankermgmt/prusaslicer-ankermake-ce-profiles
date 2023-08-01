@@ -1,5 +1,11 @@
 # Changelog
 
+## v2.4.0
+
+- Added AnkerMake M5C printer
+- Changed default PLA Color to yellow so it does not conflict with selected obeject color (Green)
+- Merged PLA and PLA+ profile as they were redundant
+
 ## v2.3.3
 
 - Added New Profile for TPU (by @natescherer)
