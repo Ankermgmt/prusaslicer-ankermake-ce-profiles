@@ -1,5 +1,9 @@
 # Changelog
 
+## v2.4.1
+
+- Add missing M5C images
+
 ## v2.4.0
 
 - Added AnkerMake M5C printer
