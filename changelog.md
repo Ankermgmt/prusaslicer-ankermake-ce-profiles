@@ -1,5 +1,11 @@
 # Changelog
 
+## v2.4.2
+
+- Set first layer speeds to 50 rther then 50% as requested by @HansAndreManfredson
+- Changed M84 to M18 as suggested by @TheMasterOfTech
+- Went with fixed value (150 degrees) in start gcode to preven ooze on warmup 
+
 ## v2.4.1
 
 - Add missing M5C images
