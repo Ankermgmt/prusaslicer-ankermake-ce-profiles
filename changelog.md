@@ -1,5 +1,9 @@
 # Changelog
 
+## v2.4.3
+
+- Added ELEGOO TPU 95A filament profile (nozzle 225/220 C, bed 40 C, density 1.27), derived from the Generic TPU 95A profile; test printed (standard, non-Rapid spool) on an AnkerMake M5C with PrusaSlicer 2.9.7
+
 ## v2.4.2
 
 - Set first layer speeds to 50 rther then 50% as requested by @HansAndreManfredson
